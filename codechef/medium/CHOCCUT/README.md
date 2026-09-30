@@ -54,7 +54,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:55:40.719Z  
+**Submitted:** 2026-09-30T14:59:40.791Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,11 +67,11 @@ int main() {
 	while(t--){
 	    int a , b;
 	    cin>>a>>b;
-	    if((a+b)%2==0){
-	        cout<<"No"<<endl;
+	    if((a*b)%2==0){
+	        cout<<"Yes"<<endl;
 	    }
 	    else{
-	        cout<<"Yes"<<endl;
+	        cout<<"No"<<endl;
 	    }
 	}
 }
