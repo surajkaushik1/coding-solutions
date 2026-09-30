@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int B, H, C;
+    cin >> B >> H >> C;
+
+    int ans = min(B / 2, H + C);
+
+    cout << ans << endl;
+
+    return 0;
+}
