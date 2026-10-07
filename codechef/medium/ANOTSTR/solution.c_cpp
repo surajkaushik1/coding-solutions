@@ -19,7 +19,7 @@ int main() {
 	            cnt2++;
 	        }
 	    }
-	    if(cnt1==cnt2){
+	    if(cnt1%2==cnt2%2){
 	        cout<<"YES"<<endl;
 	    }
 	    else{
