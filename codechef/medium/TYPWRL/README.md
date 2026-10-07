@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:10:06.669Z  
+**Submitted:** 2026-10-07T15:13:39.491Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,9 +93,17 @@ int main() {
 	            ans[i] = 'r';
 	        }
 	    }
-	    for(auto i: ans){
-	        cout<<i<<" ";
+	    int mx = 1 , cnt =1;
+	    for(int i=0;i<n;i++){
+	        if(ans[i]==ans[i+1]){
+	            cnt++;
+	        }
+	        else{
+	            cnt = 1;
+	        }
+	        mx = max(cnt,mx);
 	    }
+	    cout<<mx<<endl;
 	}
 }
 
