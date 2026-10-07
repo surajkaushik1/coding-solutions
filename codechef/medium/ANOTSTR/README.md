@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:19:32.571Z  
+**Submitted:** 2026-10-07T15:21:03.848Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -96,7 +96,7 @@ int main() {
 	            cnt2++;
 	        }
 	    }
-	    if(cnt1==cnt2){
+	    if(cnt1%2==cnt2%2){
 	        cout<<"YES"<<endl;
 	    }
 	    else{
