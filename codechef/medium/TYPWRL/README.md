@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:54:36.669Z  
+**Submitted:** 2026-10-07T14:57:00.664Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,15 +79,17 @@ int main() {
 	    cin>>s>>l;
 	    vector<char> ans(n);
 	    int k = 0;
-	    for(int i=0;i<m;i++){
-	        if(s[i]=="q" || s[i]=="w" ||s[i]=="e" ||  s[i]=="a" || s[i]=="s" || s[i]=="s" || s[i]=="d" || s[i]=="f" || s[i]=="z" || s[i]=="x" || s[i]=="c" || s[i]=='v'){
-	            ans[k] = 'l';
-	        }
-	        else{
-	            ans[k] = 'r';
-	        }
-	        k++;
-	    }
+	    for (int i = 0; i < m; i++) {
+            // Corrected to single quotes and added 'r', 't', 'g', 'b' if needed
+            if (l[i] == 'q' || l[i] == 'w' || l[i] == 'e' || l[i] == 'r' || l[i] == 't' ||
+                l[i] == 'a' || l[i] == 's' || l[i] == 'd' || l[i] == 'f' || l[i] == 'g' ||
+                l[i] == 'z' || l[i] == 'x' || l[i] == 'c' || l[i] == 'v' || l[i] == 'b') {
+                ans[i] = 'l';
+            }
+            else {
+                ans[i] = 'r';
+            }
+        }
 	    int cnt = 0 , mx = INT_MIN;
 	    for(int i=0;i<n-1;i++){
 	        if(ans[i]==ans[i+1]){
