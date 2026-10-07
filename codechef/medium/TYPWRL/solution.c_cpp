@@ -3,37 +3,5 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int n , m;
-	    cin>>n>>m;
-	    string s , l;
-	    cin>>s>>l;
-	    vector<char> ans(n);
-	    int k = 0;
-	    for (int i = 0; i < m; i++) {
-            // Corrected to single quotes and added 'r', 't', 'g', 'b' if needed
-            if (l[i] == 'q' || l[i] == 'w' || l[i] == 'e' || l[i] == 'r' || l[i] == 't' ||
-                l[i] == 'a' || l[i] == 's' || l[i] == 'd' || l[i] == 'f' || l[i] == 'g' ||
-                l[i] == 'z' || l[i] == 'x' || l[i] == 'c' || l[i] == 'v' || l[i] == 'b') {
-                ans[i] = 'l';
-            }
-            else {
-                ans[i] = 'r';
-            }
-        }
-	    int cnt = 0 , mx = INT_MIN;
-	    for(int i=0;i<n-1;i++){
-	        if(ans[i]==ans[i+1]){
-	            cnt++;
-	        }
-	        else{
-	            cnt=0;
-	        }
-	        mx = max(mx,cnt);
-	    }
-	    cout<<mx<<endl;
-	}
 
 }
