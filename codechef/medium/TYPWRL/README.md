@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:01:01.686Z  
+**Submitted:** 2026-10-07T15:10:06.669Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,10 +77,24 @@ int main() {
 	    cin>>n>>m;
 	    string s , l;
 	    cin>>s>>l;
+	    
+	    vector<char> ans(n);
 	    for(int i=0;i<n;i++){
+	        bool f = false;
 	        for(int j=0;j<m;j++){
-	            
+	            if(s[i]==l[j]){
+	                f = true;
+	            }
 	        }
+	        if(f){
+	            ans[i] = 'l';
+	        }
+	        else{
+	            ans[i] = 'r';
+	        }
+	    }
+	    for(auto i: ans){
+	        cout<<i<<" ";
 	    }
 	}
 }
