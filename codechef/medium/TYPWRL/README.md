@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:58:58.661Z  
+**Submitted:** 2026-10-07T15:01:01.686Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,7 +70,19 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+	int t;
+	cin>>t;
+	while(t--){
+	    int n , m;
+	    cin>>n>>m;
+	    string s , l;
+	    cin>>s>>l;
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<m;j++){
+	            
+	        }
+	    }
+	}
 }
 
 ```
