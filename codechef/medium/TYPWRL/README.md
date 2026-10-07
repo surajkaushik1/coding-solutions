@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:39:45.663Z  
+**Submitted:** 2026-10-07T14:47:01.663Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,6 +70,20 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n , m;
+	    cin>>n>>m;
+	    string s , l;
+	    cin>>s>>l;
+	    vector<char> ans(n);
+	    int k = 0;
+	    for(int i=0;i<m;i++){
+	        if(s[i]=="q" || s[i]=="w" ||s[i]=="e" || s[i]=="", A, S, D, F, Z, X, C, V)
+	    }
+	    
+	}
 
 }
 
