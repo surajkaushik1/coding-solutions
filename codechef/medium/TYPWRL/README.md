@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:51:25.666Z  
+**Submitted:** 2026-10-07T14:54:36.669Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -98,7 +98,7 @@ int main() {
 	        }
 	        mx = max(mx,cnt);
 	    }
-	    
+	    cout<<mx<<endl;
 	}
 
 }
