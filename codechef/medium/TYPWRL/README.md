@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:40:00.656Z  
+**Submitted:** 2026-10-07T14:51:25.666Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,6 +70,36 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n , m;
+	    cin>>n>>m;
+	    string s , l;
+	    cin>>s>>l;
+	    vector<char> ans(n);
+	    int k = 0;
+	    for(int i=0;i<m;i++){
+	        if(s[i]=="q" || s[i]=="w" ||s[i]=="e" ||  s[i]=="a" || s[i]=="s" || s[i]=="s" || s[i]=="d" || s[i]=="f" || s[i]=="z" || s[i]=="x" || s[i]=="c" || s[i]=='v'){
+	            ans[k] = 'l';
+	        }
+	        else{
+	            ans[k] = 'r';
+	        }
+	        k++;
+	    }
+	    int cnt = 0 , mx = INT_MIN;
+	    for(int i=0;i<n-1;i++){
+	        if(ans[i]==ans[i+1]){
+	            cnt++;
+	        }
+	        else{
+	            cnt=0;
+	        }
+	        mx = max(mx,cnt);
+	    }
+	    
+	}
 
 }
 
